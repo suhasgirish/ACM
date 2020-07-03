@@ -10,19 +10,22 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 </head>
 <body>
-
+<button onclick="topFunction()" id="topBtn" title="Go to top"> <i class="fas fa-chevron-up"> </i></button>
 <!-- Navbar Section -->
 <div id="navbar">
     <ul class="topnav sticky" id="myTopnav">
         <span class = "opnbtn" style="font-size:30px;cursor:pointer;float: right;" onclick="openNav()">&#9776;</span>
         <div class="logo-div">
-            <li class="logo"><img id="logo" src="Assets/ACMO.svg" alt="ACM" height="100px" width="100px">
+            <li class="logo"><img id="logo" src="logo_acm.svg" alt="ACM" height="100px" width="100px">
         </div>
         <li class="right"><a class="contactrt" href="#news">Contact US!</a></li>    
         <li class="right"><a href="#news">The Chapter</a></li>
@@ -31,6 +34,8 @@
         <li class="right"><a class="active" href="#home">Home</a></li>
     </ul>
 </div>
+
+
 <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" style="font-size:30px;cursor:pointer;float: right; padding:0;" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
@@ -42,64 +47,65 @@
         <a class="contact" href="#">Contact US!</a>
     </div>
 </div>
+
 <!-- -->
 <!-- ACM Top -->
 <div class="body-block top-block">
     <div class="container">
         <div class="row">
             <div class="col-6">
-               <i class="head-logo"><img src="Assets/ACMB.svg" alt="" height="100%" width="100%"></i>
+               <i class="head-logo"><img src="ACMB.svg" alt="" height="100%" width="100%"></i>
             </div>
             <div class="col-6">
-                <div class="cursor-block">
-                    <span class="bc-dots">. . .</span>
-                    <span class="blinking-cursor">|</span>
-                </div>
                 
             </div>
         </div>
         <div class="header-body">
             <br>
-            <h1><b>Welcome to ACM Student Chapter at VVCE, Mysore!</b></h1>
+            <h1>Association for Computing Machinery Student Chapter at VVCE, Mysore!</h1>
             <h2>This chapter is organized and operated exclusively for educational and scientific purpose to promote knowledge of Science, Design and Development.</h2> 
         </div>
         <br>
-        <button type="button" class="button center" value="Get Involved!">Get Involved!</button>
-        
+        <a href="#scrollSection"><button type="button" class="button center" value="Get Involved!">Learn More!</button></a>
+        <div id="scrollSection">
+        </div>
     </div>    
 </div>
 <!-- -->
+
 <!-- Slider Section -->
 
 <!-- -->
+
+
 <!-- Avout ACM VVCE-->
 <div class="body-block">
     <div class="container">
         <div class="secondary">
-            <h1>ACM STUDENT CHAPTER AT VVCE MYSURU (Placeholder Block)</h1><hr><br>
+            <h1>About ACM VVCE</h1><hr><br>
             <h2>VVCE ACM Student Chapter is a Chapter of the Association for Computing Machinery and was chartered on May 29, 2018.</h2><br>
-            <h4><b>This block will be replaced with other site elements like a slider or a blog posts' section, etc.</b></h4>
+            <h4>Chapter is organized and operated exclusively for educational and scientific purposes to promote the following:</h4>
             <ul>
-                <li class="sub-point">The fonts are yet to be finalized.</li>
-                <li class="sub-point">Secondary color for the text will be changed.</li>
-                <li class="sub-point">Lorem Ipsum dolor sit.</li>
+                <li class="sub-point">An increased knowledge of science, Design and Development.</li>
+                <li class="sub-point">Greater interest in computing and its applications.</li>
+                <li class="sub-point">A means of communication between people.</li>
             </ul>
         </div>
     </div>
 </div>
 <!-- -->
 <!-- Services Section -->
-<div class="section-block-grey">
+<div class="section-block-grey body-block">
     <div class="container">
         <div class="section-heading center-holder">
             <h1>Activities and Services</h1><hr>
             <div class="section-heading-line"></div>
-            <p>We provide the following services and conduct the following activities.</p>
+            <h4>We provide the following services and conduct the following activities.</h4>
         </div>
         <div class="row mt-60">
             <div class="col-md-4 col-sm-12 col-12">
                 <div class="serv-section-2">
-                    <div class="serv-section-2-icon"> <i class="fas fa-gem"></i> </div>
+                    <div class="serv-section-2-icon"> <i class="fas fa-briefcase"></i> </div>
                     <div class="serv-section-desc">
                         <h4>Consultancy Services</h4>
                         <h5>Product deliveries <br>PlaceHolder icon.</h5></div>
@@ -137,7 +143,7 @@
 		<div class="row">
 			<div class="col-md-4 col-sm-12 col-12">
 				<div class="footer-tile">
-					<img class="footer-logo center" src="Assets/vvce-logo.png" alt="vvce_logo">
+					<img class="footer-logo center" src="vvce-logo.png" alt="vvce_logo">
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12 col-12">
@@ -170,6 +176,27 @@ function closeNav() {
 }
 </script>
 
+<script>
+//Get the button
+var mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
