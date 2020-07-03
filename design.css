@@ -78,15 +78,19 @@ ul.topnav li.logo{
   }
 }
 
+.body-block h2 h4 ul li{
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
 @media only screen and (max-width: 640px){
   .body-block{
-    padding-top: 20px;
+    padding-top: 20px !important;
   }
 
   .h2{
-    font-size: 25px;
+    font-size: 25px !important;
   }
-} 
+}  
 
 #logo{
   transition: 0.3s;
