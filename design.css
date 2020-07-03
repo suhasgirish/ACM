@@ -79,7 +79,6 @@ ul.topnav li.logo{
 }
 
 .body-block h2 h4 ul li{
-  font-size: 2vw;
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
@@ -513,7 +512,6 @@ body {
 .body-block h1{
   font-family: 'Oswald', sans-serif;
   color: #ffb354; 
-  font-size: 5vw;
 }
 
 .body-block h2 h4 ul li{
