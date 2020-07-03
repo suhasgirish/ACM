@@ -6,6 +6,9 @@
   text-decoration: none;
   font-family: 'Roboto Slab', serif;
 }
+.full-height {
+  height: 100%;
+}
 
 html {
   scroll-behavior: smooth;
