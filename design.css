@@ -579,6 +579,10 @@ hr {
   font-family: 'Oswald', sans-serif;
   /*color: #fcbf49;*/
   color: #ffb354;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .secondary h4{
@@ -588,6 +592,10 @@ hr {
 .header-body h2{
   font-family: 'Quattrocento Sans', sans-serif;
   color: #FFF;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 
