@@ -781,4 +781,18 @@ hr {
   }
 }
 
+.eventBlock{
+  padding-top: 10px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.eventBlock a{
+  margin-bottom: 30px;
+}
+
+.eventBlock h6{
+  margin-right: 15px;
+}
+
 
