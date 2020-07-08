@@ -718,6 +718,9 @@ hr {
 .mobdisplay{
   display: none;
 }
+#topTeam{
+  margin: 0 13%;
+}
 
 @media only screen and (max-width: 640px){
   .teamBlock h5{
@@ -737,6 +740,13 @@ hr {
 
   .mobdisplay{
     display: block;
+  }
+  #topTeam{
+    margin: 0px;
+  }  
+
+  #teamTwo{
+    padding: 10px;
   }
 }
 
@@ -762,9 +772,13 @@ hr {
  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
-.tCenter{
-  width: 75%;
+#endTeam{
+  margin: 0 13%;
+}
+@media only screen and (max-width: 640px){
+  #endTeam{
+    margin: 0 0;
+  }
 }
 
-@media only screen and (max-width: 640px){
-}
+
