@@ -758,4 +758,80 @@ hr {
   font-size: 5vh;
 }
 
+.team-member, .team-member .team-img {
+  position: relative;
+}
+.team-member {
+  overflow: hidden;
+}
+.team-member, .team-member .team-img {
+  position: relative;
+}
+
+
+.desk, .desk h4, .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+.team-member:hover .team-hover .s-link {
+  bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+
+.team-member .s-link a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 16px;
+}
+.team-title {
+  position: static;
+  padding: 20px 0;
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.team-title h5 {
+  margin-bottom: 0px;
+  display: block;
+  text-transform: uppercase;
+}
+.team-title span {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  letter-spacing: 1px;
+}
+
+.aCenter{
+  margin: 13%;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.mobdisplay{
+  display: none;
+}
+
+@media only screen and (max-width: 640px){
+  .teamBlock h5{
+    font-size: 1.7vh;
+  }
+
+  .aCenter{
+    margin: 0px;
+  }
+
+  .mobTop{
+    margin-top: 0px !important;
+  }
+  .mobdisplayfalse{
+    display: none;
+  }
+
+  .mobdisplay{
+    display: block;
+  }
+}
 
