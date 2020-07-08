@@ -70,6 +70,12 @@ ul.topnav {
   border-bottom: 1px solid rgba(0,0,0, 0.6);
   z-index: 99;
 }
+
+@media only screen and (max-width: 768px) {
+  ul.topnav{
+    border-bottom: none;
+  }
+}
 .top-block{
   margin-top: 100px;
   padding-bottom: 50px !important;
