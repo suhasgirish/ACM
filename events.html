@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ACM VVCE</title>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<button onclick="topFunction()" id="topBtn" title="Go to top"> <i class="fas fa-chevron-up"> </i></button>
+<!-- Navbar Section -->
+<div id="navbar">
+    <ul class="topnav sticky" id="myTopnav">
+        <span class = "opnbtn" style="font-size:30px;cursor:pointer;float: right;" onclick="openNav()">&#9776;</span>
+        <div class="logo-div">
+            <li class="logo"><img id="logo" src="Assets/logo_acm.svg" alt="ACM" height="100px" width="100px">
+        </div>
+        <li class="right"><a class="contactrt" href="/index.html#contactSection">Contact US!</a></li>    
+        <li class="right"><a href="/bylaws.html">Chapter By-Laws</a></li>
+        <li class="right"><a class="active" href="#">Events</a></li>
+        <li class="right"><a  href="/team.html">Team</a></li>
+        <li class="right"><a href="/index.html">Home</a></li>
+    </ul>
+</div>
+
+<div class="body-block top-block">
+    <div class="container">
+        <h1>Upcoming and Past Events</h1><hr><br>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">10th Jul, 2020</h6>
+                    <img src="Assets/bugfix.jpg" alt="" width="75%" height="80%">
+                    <h3>Event: Bug Fix</h3>
+                    <p>The first of its kind event. No coding from scratch. Fix the program with your superior code.</p>
+                    <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">18th May, 2020</h6>
+                    <img src="http://vvce.acm.org/img/event/webinar_cybersecurity.jpeg" alt="" width="75%" height="80%">
+                    <h3>Cyber System Security Webinar</h3>
+                    <p>Webinar on Cyber System Security by Dr. Sandeep Shukla (IIT Kanpur)</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">25th Mar, 2020</h6>
+                    <img src="Assets/webathon.png" alt="" width="75%" height="80%">
+                    <h3>Event: Web-A-Thon</h3>
+                    <p>Design a website using HTML/CSS/JS and compete with other participants!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60">
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">12th Feb, 2020</h6>
+                    <img src="http://vvce.acm.org/img/event/aicdmb.png" alt="" width="75%" height="80%">
+                    <h3>AICDMB 2020</h3>
+                    <p>Annual International Conference on Data Science, Machine Learning and Blockchain Technology (AICDMB-2020)</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">21st Dec, 2020</h6>
+                    <img src="http://vvce.acm.org/img/event/hoc32019.jpeg" alt="" width="75%" height="80%">
+                    <h3>Hour of Code 2019-20</h3>
+                    <p>Annual Hour of Code was held.</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">19th Sept, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/cybersecurity_workshop.jpg" alt="" width="75%" height="80%">
+                    <h3>Workshop: Intro to CyberSecurity</h3>
+                    <p>Two day workshop on Cybersecurity
+                        Introduction to cybersecurity
+                        Introduction to kali linux
+                        Malware Analysis
+                        Basics of Pen testing</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60">
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">7th Sept, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/paper_writing_wing.jpeg" alt="" width="75%" height="80%">
+                    <h3>Workshop: Paper Writing Skills</h3>
+                    <p>A Workshop on paper writing skills was held.</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">17th Aug, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/Acm_dsp_ramasuri.png" alt="" width="75%" height="80%">
+                    <h3>ACM DSP: Dr. Ramasuri Narayanam</h3>
+                    <p>Design and Analysis of Graphical Password. Unsupervised Learning in Data Mining.</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">8th May, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/6.png" alt="" width="75%" height="80%">
+                    <h3>ACM Meet and Greet Program</h3>
+                    <p>The Old officers are felicitated with a token of appreciation and new officers are elected by giving the appointment letter by Dr. Ravi Kumar V, HOD-CSE addressed the gathering by telling the importance ofACMChapter.</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60">
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">11th Mar, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/3.jpg" alt="" width="75%" height="80%">
+                    <h3>Workshop: Research</h3>
+                    <p>Essential Research Identifiers and Benefits of Reviewing Manuscripts for Quality Journals. & Routing Protocols in Underwater Sensor Networks: Challenges and Future Directions.</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">24th Oct, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/2.jpg" alt="" width="75%" height="80%">
+                    <h3>ACM DSP: Dr.G.R.Sinha</h3>
+                    <p>ACM Student Chapter Inauguration and  "Developing Employability skills using ICT Tools" by ACM DSP, Talk on Study of Cognitive Ability of Human Brain</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">9th Oct, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/1.jpg" alt="" width="75%" height="80%">
+                    <h3>Workshop: Design Thinking</h3>
+                    <p>Workshop on "Design Thinking" was done on October 9, 2018 by Subbu Iyer</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="row mt-60">
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">11th Mar, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/4.jpeg" alt="" width="75%" height="80%">
+                    <h3>Hour of Code 2018-19</h3>
+                    <p>Annual Hour of Code was held.</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
+                    <h6 class="postDate">1st Oct, 2019</h6>
+                    <img src="http://vvce.acm.org/img/event/5.jpg" alt="" width="75%" height="80%">
+                    <h3>Industrial Visit</h3>
+                    <p>Industrial visit to ISRO Master Control Facility (MCF) on October 1, 2018</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" style="font-size:30px;cursor:pointer;float: right; padding:0;" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="/index.html">Home</a>
+        <a class="active" href="/events.html">Events</a>
+        <a  href="/team.html">Team</a>
+        <a href="/bylaws.html">Chapter By-Laws</a><br><br>
+        <a class="contact" href="/index.html#contact">Contact US!</a>
+        <div class="social d-flex justify-content-center">
+            <a class="overlayIcon" href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"><i class="overlaySocial fab fa-linkedin-in"></i></a>
+            <a class="overlayIcon" href="https://www.facebook.com/vvceacm"><i class="overlaySocial fab fa-facebook"></i></a>
+            <a class="overlayIcon" href="https://www.instagram.com/vvce_acm/"><i class="overlaySocial fab fa-instagram"></i></a>
+            <a class="overlayIcon" href="mailto:acm@vvce.ac.in"><i class="overlaySocial far fa-envelope"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Footer Section -->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-12 col-12">
+				<div class="footer-tile">
+					<img class="footer-logo center" src="Assets/vvce-logo.png" alt="vvce_logo">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-12">
+				<div class="footer-tile center">
+					<p style="text-align: center; padding-top: 10px;"><br><br>Made with ❤️ by the Webmasters</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-12">
+				<div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"><i class="icon fab fa-linkedin-in"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/vvceacm"><i class="icon fab fa-facebook"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/vvce_acm/"><i class="icon fab fa-instagram"></i></a>
+                    <a class="mx-2" href="mailto:acm@vvce.ac.in"><i class="icon far fa-envelope"></i></a>
+                </div>
+			</div>
+        </div>
+    </div>
+    <div class="endblock"><div class="container"><p style="text-align: left;">©VVCE ACM Student Chapter, Mysuru</p></div></div>
+</div>
+<!-- -->
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%"; 
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src=".//fetchScript.js"></script>
+
+
+</body>
+</html>	
