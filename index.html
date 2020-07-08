@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -59,8 +60,8 @@
 <div class="body-block top-block">
     <div class="container">
         <div class="row">
-            <div class="col-6">
-               <i class="head-logo"><img src="Assets/ACMB.svg" alt="" height="100%" width="100%"></i>
+            <div class="col-6 animate__animated animate__fadeIn">
+               <i class="head-logo "><img src="Assets/ACMB.svg" alt="" height="100%" width="100%"></i>
             </div>
             <div class="col-6">
                 
@@ -68,11 +69,11 @@
         </div>
         <div class="header-body">
             <br>
-            <h1>Association for Computing Machinery Student Chapter at VVCE, Mysore!</h1>
-            <h2>This chapter is organized and operated exclusively for educational and scientific purpose to promote knowledge of Science, Design and Development.</h2> 
+            <h1 class="animate__animated animate__fadeIn">Association for Computing Machinery Student Chapter at VVCE, Mysore!</h1>
+            <h2 class="animate__animated animate__fadeIn">This chapter is organized and operated exclusively for educational and scientific purpose to promote knowledge of Science, Design and Development.</h2> 
         </div>
         <br>
-        <a href="#About" id="btn" class="button center">Learn More!</a>
+        <a href="#About" id="btn" class="animate__animated animate__fadeInUp button center">Learn More!</a>
         <div id="About">
         </div>
     </div>  
@@ -103,13 +104,13 @@
                     <a href="#" id="postbtn" class="button center">Read More</a>
                 </div>                
                 <div class="col-md-4 col-sm-12 col-12 post">
-                    <h6 class="postDate">12th Aug, 2019</h6>
+                    <h6 class="postDate" id="postDate">12th Aug, 2019</h6>
                     <div id="imageblock">
                         <img src="Assets/ivisit.png" alt="Not Found!">
                     </div>
-                    <h4>ISRO MCF Visit | Industrial Visit</h4>
-                    <p>A visit to ISRO Master Control Facility (MCF) on October 1, 2018</p>
-                    <a href="https://google.com" id="postbtn" class="button center">Read More</a>
+                    <h4 id="title">ISRO MCF Visit | Industrial Visit</h4>
+                    <p id="post">A visit to ISRO Master Control Facility (MCF) on October 1, 2018</p>
+                    <a href="#" id="postLink"><button id="postbtn" class="button center">Read More</button></a>
                 </div>
             </div>
         </div>
@@ -262,6 +263,7 @@ function topFunction() {
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src=".//fetchScript.js"></script>
 
 
 </body>
