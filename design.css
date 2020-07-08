@@ -76,6 +76,7 @@ ul.topnav {
     border-bottom: none;
   }
 }
+
 .top-block{
   margin-top: 100px;
   padding-bottom: 50px !important;
@@ -751,4 +752,19 @@ hr {
   background-color: rgb(25, 149, 209,0.8);
   color: white;
   transition: ease-in 0.2s;
+}
+
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+ -webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+ -moz-user-select: none; /* Firefox */
+ -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.tCenter{
+  width: 75%;
+}
+
+@media only screen and (max-width: 640px){
 }
