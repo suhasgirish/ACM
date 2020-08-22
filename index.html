@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 	<title>Home | ACM VVCE</title>
 	<link rel="stylesheet" type="text/css" href="design.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -26,24 +33,24 @@
     <ul class="topnav sticky" id="myTopnav">
         <span class = "opnbtn" style="font-size:30px;cursor:pointer;float: right;" onclick="openNav()">&#9776;</span>
         <div class="logo-div">
-            <a href="/ACM/index.html"><li class="logo"><img id="logo" src="Assets/logo_acm.svg" alt="ACM" height="100px" width="100px"></li></a>
+            <a href="/index.html"><li class="logo"><img id="logo" src="Assets/logo_acm.svg" alt="ACM" height="100px" width="100px"></li></a>
         </div>
-        <li class="right"><a class="contactrt" href="#contactSection">Contact US!</a></li>    
-        <li class="right"><a href="/ACM/bylaws.html">Chapter By-Laws</a></li>
-        <li class="right"><a href="/ACM/events.html">Events</a></li>
-        <li class="right"><a href="/ACM/team.html">Team</a></li>
-        <li class="right"><a class="active" href="#">Home</a></li>
+        <li class="right"><a id="navItem" class="contactrt" href="#contactSection">Contact US!</a></li>    
+        <li class="right"><a id="navItem" href="/bylaws.html">Chapter By-Laws</a></li>
+        <li class="right"><a id="navItem" href="/events.html">Events</a></li>
+        <li class="right"><a id="navItem" href="/team.html">Team</a></li>
+        <li class="right"><a id="navItem" class="active" href="#">Home</a></li>
     </ul>
 </div>
 
 
 <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" style="font-size:30px;cursor:pointer;float: right; padding:0;" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" style="font-size:30px;cursor:pointer;float: right; padding:0;" onclick="closeNav()">&#9776;</a>
     <div class="overlay-content">
         <a class="active" href="#">Home</a>
-        <a href="/ACM/team.html">Team</a>
-        <a href="/ACM/events.html">Events</a>
-        <a href="/ACM/bylaws.html">Chapter By-Laws</a><br><br>
+        <a href="team.html">Team</a>
+        <a href="events.html">Events</a>
+        <a href="bylaws.html">Chapter By-Laws</a><br><br>
         <a class="contact" href="#contactSection">Contact US!</a>
         <div class="social d-flex justify-content-center">
             <a class="overlayIcon" href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"><i class="overlaySocial fab fa-linkedin-in"></i></a>
@@ -86,13 +93,23 @@
             <h1>Events and Activities</h1><hr>
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-12 post">
+                    <h6 class="postDate" id="postDate">28th Jul, 2018</h6>
+                    <div id="imageblock">
+                        <img src="Assets/udhvvce-100.jpg" alt="Not Found!">
+                    </div>
+                    <h4 id="title">Update: Collaboration with University of Houston, Downtown</h4>
+                    <p id="post">Very happy and proud to inform that Prof. Lin, University of Houston, USA agreed to collaborate with our Institution.
+                        Looking forward for the great eductional journey.</p>
+                    <a href="https://vvce.acm.org/uhd.html" id="postbtn" class="button center">Read</a>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 post">
                     <h6 class="postDate" id="postDate">20th-24th Jul, 2020</h6>
                     <div id="imageblock">
-                        <img src="http://icrtcs.vvce.ac.in/assets/img/slide/3.png" alt="Not Found!">
+                        <img src="Assets/events/icrtcs.png" alt="Not Found!">
                     </div>
                     <h4 id="title">Event: International Colloquium on Recent Trends in Computer Science</h4>
                     <p id="post">International Colloquium aims at bringing together Researchers, Engineers, Scientists and Industrialists from all over the world to share and discuss advances and challenges in digital transformation. ICRTCS-2020 mainly focuses on IoT & Artificial Intelligence</p>
-                    <a href="http://icrtcs.vvce.ac.in/" id="postbtn" class="button center">Register!</a>
+                    <a href="http://icrtcs.vvce.ac.in/" id="postbtn" class="button center eventClosed">Closed</a>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12 post">
                     <h6 class="postDate">10th Jul, 2020</h6>
@@ -101,15 +118,8 @@
                     </div>
                     <h4>Event: Bug Fix</h4>
                     <p>The first of its kind event. No coding from scratch. Fix the program with your superior code.</p>
-                    <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a>
-                </div>
-                <div class="col-md-4 col-sm-12 col-12 post">
-                    <h6 class="postDate">18th May, 2020</h6>
-                    <div id="imageblock"><img src="Assets/cybweb.png" alt="Not Found!">
-                    </div>
-                    <h4>Cyber System Security Webinar</h4>
-                    <p>A webinar was conducted on Cyber Security by Dr. Sandeepa Shukla, Interdisciplinary Center for Cyber Security & Cyber defense of Critical Infrastructure, Department of computer science and engineering, Indian Institute of Technology, Kanpur.</p>  
-                </div>                 
+                    <a href="https://vvce.acm.org/bugfix" id="postbtn" class="button center eventClosed">Closed</a>
+                </div>             
             </div>
         </div>
     </div>
@@ -212,7 +222,7 @@
                         
                     </div>
                     <div class="team-title">
-                        <h5>Reena Reddy  <a href="#"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
+                        <h5>Reena Reddy  <!--<a href="#"><i class="team-icon fab fa-linkedin-in"></i></a>--> </h5>
                         <span>Vice-Chair</span>
                     </div>
                 </div>
@@ -239,7 +249,7 @@
                     
                 </div>
                 <div class="team-title">
-                    <h5>Sathya Pramod  <a href="#"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
+                    <h5>Sathya Pramod  <!--<a href="#"><i class="team-icon fab fa-linkedin-in"></i></a>--></h5>
                     <span>Treasurer</span>
                 </div>
             </div>
@@ -290,7 +300,7 @@
                         
                     </div>
                     <div class="team-title">
-                        <h5>Sharmila  <a href="#"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
+                        <h5>Sharmila  <!--<a href="#"><i class="team-icon fab fa-linkedin-in"></i></a>--></h5>
                         <span>Event Co-Ordinator</span>
                     </div>
                 </div>
@@ -302,7 +312,7 @@
                         
                     </div>
                     <div class="team-title">
-                        <h5>Shrivatsa G  <a href="#"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
+                        <h5>Shrivatsa G  <!--<a href="#"><i class="team-icon fab fa-linkedin-in"></i></a>--></h5>
                         <span>Event Co-Ordinator</span>
                     </div>
                 </div>
@@ -359,7 +369,7 @@
 			</div>
 			<div class="col-md-4 col-sm-12 col-12">
 				<div class="footer-tile center">
-					<p style="text-align: center; padding-top: 10px;"><br><br>Made with ❤️ by the Webmasters</p>
+					<p style="text-align: center; padding-top: 10px; content: '';"></p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12 col-12">
@@ -375,7 +385,6 @@
     <div class="endblock"><div class="container"><p style="text-align: left;">©VVCE ACM Student Chapter, Mysuru</p></div></div>
 </div>
 <!-- -->
-
 
 
 <script>

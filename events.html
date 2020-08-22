@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 	<title>Events | ACM VVCE</title>
 	<link rel="stylesheet" type="text/css" href="design.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -26,24 +33,24 @@
     <ul class="topnav sticky" id="myTopnav">
         <span class = "opnbtn" style="font-size:30px;cursor:pointer;float: right;" onclick="openNav()">&#9776;</span>
         <div class="logo-div">
-            <a href="/ACM/index.html"><li class="logo"><img id="logo" src="Assets/logo_acm.svg" alt="ACM" height="100px" width="100px"></li></a>
+            <a href="index.html"><li class="logo"><img id="logo" src="Assets/logo_acm.svg" alt="ACM" height="100px" width="100px"></li></a>
         </div>
-        <li class="right"><a class="contactrt" href="/ACM/index.html#contactSection">Contact US!</a></li>    
-        <li class="right"><a href="/ACM/bylaws.html">Chapter By-Laws</a></li>
+        <li class="right"><a class="contactrt" href="index.html#contactSection">Contact US!</a></li>    
+        <li class="right"><a href="bylaws.html">Chapter By-Laws</a></li>
         <li class="right"><a class="active" href="#">Events</a></li>
-        <li class="right"><a  href="/ACM/team.html">Team</a></li>
-        <li class="right"><a href="/ACM/index.html">Home</a></li>
+        <li class="right"><a  href="team.html">Team</a></li>
+        <li class="right"><a href="index.html">Home</a></li>
     </ul>
 </div>
 	
 <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" style="font-size:30px;cursor:pointer;float: right; padding:0;" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" style="font-size:30px;cursor:pointer;float: right; padding:0;" onclick="closeNav()">&#9776;</a>
     <div class="overlay-content">
-        <a href="/ACM/index.html">Home</a>
-        <a href="/ACM/team.html">Team</a>
-        <a class="active" href="/ACM/events.html">Events</a>
-        <a href="/ACM/bylaws.html">Chapter By-Laws</a><br><br>
-        <a class="contact" href="/ACM/index.html#contactSection">Contact US!</a>
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a class="active" href="events.html">Events</a>
+        <a href="bylaws.html">Chapter By-Laws</a><br><br>
+        <a class="contact" href="index.html#contactSection">Contact US!</a>
         <div class="social d-flex justify-content-center">
             <a class="overlayIcon" href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"><i class="overlaySocial fab fa-linkedin-in"></i></a>
             <a class="overlayIcon" href="https://www.facebook.com/vvceacm"><i class="overlaySocial fab fa-facebook"></i></a>
@@ -59,11 +66,21 @@
         <div class="row">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
+                    <h6 class="postDate">28th Jul, 2018</h6>
+                    <img src="Assets/udhvvce-100.jpg" alt="" width="75%" height="80%">
+                    <h3>Update: Collaboration with University of Houston, Downtown</h3>
+                    <p>Very happy and proud to inform that Prof. Lin, University of Houston, USA agreed to collaborate with our Institution.
+                        Looking forward for the great eductional journey.</p>
+                    <a href="https://vvce.acm.org/uhd.html" id="postbtn" class="button center">Read</a>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
                     <h6 class="postDate">20th-24th Jul, 2020</h6>
-                    <img src="http://icrtcs.vvce.ac.in/assets/img/slide/3.png" alt="" width="75%" height="80%">
+                    <img src="Assets/events/icrtcs.png" alt="" width="75%" height="80%">
                     <h3>Event: International Colloquium on Recent Trends in Computer Science</h3>
                     <p>International Colloquium aims at bringing together Researchers, Engineers, Scientists and Industrialists from all over the world to share and discuss advances and challenges in digital transformation. ICRTCS-2020 mainly focuses on IoT & Artificial Intelligence</p>
-                    <a href="http://icrtcs.vvce.ac.in/" id="postbtn" class="button center">Register!</a>
+                    <a href="http://icrtcs.vvce.ac.in/" id="postbtn" class="button center eventClosed">Closed</a>
                 </div>
             </div>
             <div class="col-sm-4 col-md-4 col-12">
@@ -72,19 +89,20 @@
                     <img src="Assets/bugfix.jpg" alt="" width="75%" height="80%">
                     <h3>Event: Bug Fix</h3>
                     <p>The first of its kind event. No coding from scratch. Fix the program with your superior code.</p>
-                    <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a>
+                    <a href="https://vvce.acm.org/bugfix" id="postbtn" class="button center eventClosed">Closed</a>
                 </div>
             </div>
+            
+        </div>
+        <div class="row mt-60">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">18th May, 2020</h6>
-                    <img src="http://vvce.acm.org/img/event/webinar_cybersecurity.jpeg" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/webinar_cybersecurity.jpeg" alt="" width="75%" height="80%">
                     <h3>Cyber System Security Webinar</h3>
                     <p>Webinar on Cyber System Security by Dr. Sandeep Shukla (IIT Kanpur)</p>
                 </div>
             </div>
-        </div>
-        <div class="row mt-60">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">25th Mar, 2020</h6>
@@ -96,27 +114,28 @@
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">12th Feb, 2020</h6>
-                    <img src="http://vvce.acm.org/img/event/aicdmb.png" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/aicdmb.jpg" alt="" width="75%" height="80%">
                     <h3>AICDMB 2020</h3>
                     <p>Annual International Conference on Data Science, Machine Learning and Blockchain Technology (AICDMB-2020)</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
                 </div>
             </div>
-            <div class="col-sm-4 col-md-4 col-12">
-                <div class="eventBlock">
-                    <h6 class="postDate">21st Dec, 2020</h6>
-                    <img src="http://vvce.acm.org/img/event/hoc32019.jpeg" alt="" width="75%" height="80%">
-                    <h3>Hour of Code 2019-20</h3>
-                    <p>Annual Hour of Code was held.</p>
-                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
-                </div>
-            </div>   
+             
         </div>
         <div class="row mt-60">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
+                    <h6 class="postDate">21st Dec, 2020</h6>
+                    <img src="Assets/img/event/hoc32019.jpeg" alt="" width="75%" height="80%">
+                    <h3>Hour of Code 2019-20</h3>
+                    <p>Annual Hour of Code was held.</p>
+                    <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
+                </div>
+            </div>  
+            <div class="col-sm-4 col-md-4 col-12">
+                <div class="eventBlock">
                     <h6 class="postDate">19th Sept, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/cybersecurity_workshop.jpg" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/cybersecurity_workshop.jpg" alt="" width="75%" height="80%">
                     <h3>Workshop: Intro to CyberSecurity</h3>
                     <p>Two day workshop on Cybersecurity
                         Introduction to cybersecurity
@@ -129,27 +148,28 @@
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">7th Sept, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/paper_writing_wing.jpeg" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/paper_writing_wing.jpeg" alt="" width="75%" height="80%">
                     <h3>Workshop: Paper Writing Skills</h3>
                     <p>A Workshop on paper writing skills was held.</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
                 </div>
             </div>
+            
+        </div>
+        <div class="row mt-60">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">17th Aug, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/Acm_dsp_ramasuri.png" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/Acm_dsp_ramasuri.jpg" alt="" width="75%" height="80%">
                     <h3>ACM DSP: Dr. Ramasuri Narayanam</h3>
                     <p>Design and Analysis of Graphical Password. Unsupervised Learning in Data Mining.</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
                 </div>
             </div>  
-        </div>
-        <div class="row mt-60">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">8th May, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/6.png" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/6.png" alt="" width="75%" height="80%">
                     <h3>ACM Meet and Greet Program</h3>
                     <p>The Old officers are felicitated with a token of appreciation and new officers are elected by giving the appointment letter by Dr. Ravi Kumar V, HOD-CSE addressed the gathering by telling the importance ofACMChapter.</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
@@ -158,27 +178,28 @@
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">11th Mar, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/3.jpg" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/3.jpg" alt="" width="75%" height="80%">
                     <h3>Workshop: Research</h3>
                     <p>Essential Research Identifiers and Benefits of Reviewing Manuscripts for Quality Journals. & Routing Protocols in Underwater Sensor Networks: Challenges and Future Directions.</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
                 </div>
             </div>
+            
+        </div>
+        <div class="row mt-60">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">24th Oct, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/2.jpg" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/2.jpg" alt="" width="75%" height="80%">
                     <h3>ACM DSP: Dr.G.R.Sinha</h3>
                     <p>ACM Student Chapter Inauguration and  "Developing Employability skills using ICT Tools" by ACM DSP, Talk on Study of Cognitive Ability of Human Brain</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
                 </div>
             </div>  
-        </div>
-        <div class="row mt-60">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">9th Oct, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/1.jpg" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/1.jpg" alt="" width="75%" height="80%">
                     <h3>Workshop: Design Thinking</h3>
                     <p>Workshop on "Design Thinking" was done on October 9, 2018 by Subbu Iyer</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
@@ -187,16 +208,19 @@
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">11th Mar, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/4.jpeg" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/4.jpeg" alt="" width="75%" height="80%">
                     <h3>Hour of Code 2018-19</h3>
                     <p>Annual Hour of Code was held.</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
                 </div>
             </div>
+            
+        </div>
+        <div class="row mt-60">
             <div class="col-sm-4 col-md-4 col-12">
                 <div class="eventBlock">
                     <h6 class="postDate">1st Oct, 2019</h6>
-                    <img src="http://vvce.acm.org/img/event/5.jpg" alt="" width="75%" height="80%">
+                    <img src="Assets/img/event/5.jpg" alt="" width="75%" height="80%">
                     <h3>Industrial Visit</h3>
                     <p>Industrial visit to ISRO Master Control Facility (MCF) on October 1, 2018</p>
                     <!-- <a href="https://vvce-acm.github.io/bugfix/" id="postbtn" class="button center">Register!</a> -->
@@ -217,7 +241,6 @@
 			</div>
 			<div class="col-md-4 col-sm-12 col-12">
 				<div class="footer-tile center">
-					<p style="text-align: center; padding-top: 10px;"><br><br>Made with ❤️ by the Webmasters</p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12 col-12">
