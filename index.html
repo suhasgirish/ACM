@@ -1,429 +1,656 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-	<title>Home | ACM VVCE</title>
-	<link rel="stylesheet" type="text/css" href="design.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Home | ACM VVCE</title>
+    <link rel="stylesheet" type="text/css" href="design.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-</head>
-<body>
-<button onclick="topFunction()" id="topBtn" title="Go to top"> <i class="fas fa-chevron-up"> </i></button>
-<!-- Navbar Section -->
-<div id="navbar">
-    <ul class="topnav sticky" id="myTopnav">
-        <span class = "opnbtn" style="font-size:30px;cursor:pointer;float: right;" onclick="openNav()">&#9776;</span>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-chevron-up"> </i>
+    </button>
+    <!-- Navbar Section -->
+    <div id="navbar">
+      <ul class="topnav sticky" id="myTopnav">
+        <span
+          class="opnbtn"
+          style="font-size: 30px; cursor: pointer; float: right"
+          onclick="openNav()"
+          >&#9776;</span
+        >
         <div class="logo-div">
-            <a href="/index.html"><li class="logo"><img id="logo" src="Assets/logo_acm.svg" alt="ACM" height="100px" width="100px"></li></a>
+          <a href="/index.html"
+            ><li class="logo">
+              <img
+                id="logo"
+                src="././Assets/logo_acm.svg"
+                alt="ACM"
+                height="100px"
+                width="100px"
+              /></li
+          ></a>
         </div>
-        <li class="right"><a id="navItem" class="contactrt" href="#contactSection">Contact US!</a></li>    
-        <li class="right"><a id="navItem" href="/bylaws.html">Chapter By-Laws</a></li>
-        <li class="right"><a id="navItem" href="/events.html">Events</a></li>
-        <li class="right"><a id="navItem" href="/team.html">Team</a></li>
-        <li class="right"><a id="navItem" class="active" href="#">Home</a></li>
-    </ul>
-</div>
-
-
-<div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" style="font-size:30px;cursor:pointer;float: right; padding:0;" onclick="closeNav()">&#9776;</a>
-    <div class="overlay-content">
-        <a class="active" href="#">Home</a>
-        <a href="team.html">Team</a>
-        <a href="events.html">Events</a>
-        <a href="bylaws.html">Chapter By-Laws</a><br><br>
-        <a class="contact" href="#contactSection">Contact US!</a>
-        <div class="social d-flex justify-content-center">
-            <a class="overlayIcon" href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"><i class="overlaySocial fab fa-linkedin-in"></i></a>
-            <a class="overlayIcon" href="https://www.facebook.com/vvceacm"><i class="overlaySocial fab fa-facebook"></i></a>
-            <a class="overlayIcon" href="https://www.instagram.com/vvce_acm/"><i class="overlaySocial fab fa-instagram"></i></a>
-            <a class="overlayIcon" href="mailto:acm@vvce.ac.in"><i class="overlaySocial far fa-envelope"></i></a>
-        </div>
+        <li class="right">
+          <a class="contactrt" href="/index.html#contactSection">Contact US!</a>
+        </li>
+        <li class="right"><a href="/bylaws.html">Chapter By-Laws</a></li>
+        <li class="right"><a href="/events.html">Events</a></li>
+        <li class="right"><a href="/team.html">Team</a></li>
+        <li class="right"><a class="active" href="/index.html">Home</a></li>
+      </ul>
     </div>
-</div>
 
-<!-- -->
-<!-- ACM Top -->
-<div class="body-block top-block">
-    <div class="container">
+    <div id="myNav" class="overlay">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        style="font-size: 30px; cursor: pointer; float: right; padding: 0"
+        onclick="closeNav()"
+        >&#9776;</a
+      >
+      <div class="overlay-content">
+        <a class="active" href="/index.html">Home</a>
+        <a href="/team.html">Team</a>
+        <a href="/events.html">Events</a>
+        <a href="/bylaws.html">Chapter By-Laws</a><br /><br />
+        <a class="contact" href="/index.html#contactSection">Contact US!</a>
+        <div class="social d-flex justify-content-center">
+          <a
+            class="overlayIcon"
+            href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"
+            ><i class="overlaySocial fab fa-linkedin-in"></i
+          ></a>
+          <a class="overlayIcon" href="https://www.facebook.com/vvceacm"
+            ><i class="overlaySocial fab fa-facebook"></i
+          ></a>
+          <a class="overlayIcon" href="https://www.instagram.com/vvce_acm/"
+            ><i class="overlaySocial fab fa-instagram"></i
+          ></a>
+          <a class="overlayIcon" href="mailto:acm@vvce.ac.in"
+            ><i class="overlaySocial far fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- -->
+    <!-- ACM Top -->
+    <div class="body-block top-block">
+      <div class="container">
         <div class="row">
-            <div class="col-6 animate__animated animate__fadeIn">
-               <i class="head-logo "><img src="Assets/ACMB.svg" alt="" height="100%" width="100%"></i>
-            </div>
-            <div class="col-6">
-                
-            </div>
+          <div class="col-6 animate__animated animate__fadeIn">
+            <i class="head-logo"
+              ><img src="./Assets/ACMB.svg" alt="" height="100%" width="100%"
+            /></i>
+          </div>
+          <div class="col-6"></div>
         </div>
         <div class="header-body">
-            <br>
-            <h1 class="animate__animated animate__fadeIn">Association for Computing Machinery Student Chapter at VVCE, Mysore!</h1>
-            <h2 class="animate__animated animate__fadeIn">This chapter is organized and operated exclusively for educational and scientific purpose to promote knowledge of Science, Design and Development.</h2> 
+          <br />
+          <h1 class="animate__animated animate__fadeIn">
+            Association for Computing Machinery Student Chapter at VVCE, Mysore!
+          </h1>
+          <h2 class="animate__animated animate__fadeIn">
+            This chapter is organized and operated exclusively for educational
+            and scientific purpose to promote knowledge of Science, Design and
+            Development.
+          </h2>
         </div>
-        <br>
-        <a href="#About" id="btn" class="animate__animated animate__fadeInUp button center">Learn More!</a>
-        <div id="About">
-        </div>
-    </div>  
-</div>
-<!-- -->
-	
-<!-- Blog Section-->
-<div class="body-block">
-    <div class="container full-height">
+        <br />
+        <a
+          href="#About"
+          id="btn"
+          class="animate__animated animate__fadeInUp button center"
+          >Learn More!</a
+        >
+        <div id="About"></div>
+      </div>
+    </div>
+    <!-- -->
+
+    <!-- Blog Section-->
+    <div class="body-block">
+      <div class="container full-height">
         <div class="secondary">
-            <h1>Events and Activities</h1><hr>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-12 post">
-                    <h6 class="postDate" id="postDate">28th Jul, 2018</h6>
-                    <div id="imageblock">
-                        <img src="./Assets/udhvvce-100.jpg" alt="Not Found!">
-                    </div>
-                    <h4 id="title">Update: Collaboration with University of Houston, Downtown</h4>
-                    <p id="post">Very happy and proud to inform that Prof. Lin, University of Houston, USA agreed to collaborate with our Institution.
-                        Looking forward for the great eductional journey.</p>
-                    <a href="https://vvce.acm.org/uhd.html" id="postbtn" class="button center">Read</a>
-                </div>
-                <div class="col-md-4 col-sm-12 col-12 post">
-                    <h6 class="postDate" id="postDate">20th-24th Jul, 2020</h6>
-                    <div id="imageblock">
-                        <img src="Assets/events/icrtcs.png" alt="Not Found!">
-                    </div>
-                    <h4 id="title">Event: International Colloquium on Recent Trends in Computer Science</h4>
-                    <p id="post">International Colloquium aims at bringing together Researchers, Engineers, Scientists and Industrialists from all over the world to share and discuss advances and challenges in digital transformation. ICRTCS-2020 mainly focuses on IoT & Artificial Intelligence</p>
-                    <a href="http://icrtcs.vvce.ac.in/" id="postbtn" class="button center eventClosed">Closed</a>
-                </div>
-                <div class="col-md-4 col-sm-12 col-12 post">
-                    <h6 class="postDate">10th Jul, 2020</h6>
-                    <div id="imageblock">
-                        <img src="Assets/bugfix.jpg" alt="Not Found!">
-                    </div>
-                    <h4>Event: Bug Fix</h4>
-                    <p>The first of its kind event. No coding from scratch. Fix the program with your superior code.</p>
-                    <a href="https://vvce.acm.org/bugfix" id="postbtn" class="button center eventClosed">Closed</a>
-                </div>             
+          <h1>Events and Activities</h1>
+          <hr />
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-12 post">
+              <h6 class="postDate">3rd August, 2021</h6>
+              <div id="imageblock">
+                <img src="./Assets/greetnmeet21.jpg" alt="Greet and Meet" />
+              </div>
+              <h4>VVCE ACM Greet and Meet - 2021</h4>
+              <p>
+                Farewell ceremony to the senior officers and handover of posts
+                to the new officers
+              </p>
             </div>
+            <div class="col-md-4 col-sm-12 col-12 post">
+              <h6 class="postDate">6th July, 2021</h6>
+              <div id="imageblock">
+                <img
+                  src="./Assets/call-for-officers.jpg"
+                  alt="Call for Officers thumbnail"
+                />
+              </div>
+              <h4>Call for Officers 2021-22</h4>
+              <p>We are inviting applications for the next ACM Officers!</p>
+              <a
+                href="https://bit.ly/ACM-VVCE-NEW-OFFICERS"
+                id="postbtn"
+                class="button center eventClosed"
+                >Closed</a
+              >
+            </div>
+            <div class="col-md-4 col-sm-12 col-12 post">
+              <h6 class="postDate">2nd June, 2021</h6>
+              <div id="imageblock">
+                <img
+                  src="./Assets/bd_acm_dsp_thumb.svg"
+                  alt="ACM DSP: Ricardo Baeza-Yates"
+                />
+              </div>
+              <h4>ACM DSP: Ricardo Baeza-Yates</h4>
+              <p>Big Data or Right Data? Opportunities and Challenges</p>
+              <a
+                href="https://vvce.acm.org/dsp.html"
+                id="postbtn"
+                class="button center"
+                >Visit</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- -->
-<div id="contactUs"></div>
+    <!-- -->
+    <div id="contactUs"></div>
 
-<!-- Services Section-->
-<div class="body-block">
-    <div class="container">
-        <h1>Services and Projects</h1><hr>
+    <!-- Services Section-->
+    <div class="body-block">
+      <div class="container">
+        <h1>Services and Projects</h1>
+        <hr />
         <div class="row mReverse">
-            <div class="halfBlock">
-                <h2>Consultancy Services</h2>
-                <p>A Project "Computerised Voting System" was developed for the elections of Cosmo Politan Club 2019.</p>
-            </div>
-            <div class="halfBlock alt">
-                <img src="Assets/cservicesb.svg" alt="" width="100%">
-            </div>
+          <div class="halfBlock">
+            <h2>Consultancy Services</h2>
+            <p>
+              A Project "Computerised Voting System" was developed for the
+              elections of Cosmo Politan Club 2019.
+            </p>
+          </div>
+          <div class="halfBlock alt">
+            <img src="Assets/cservicesb.svg" alt="" width="100%" />
+          </div>
         </div>
         <div class="row alt">
-            <div class="halfBlock">
-                <img src="./Assets/hocb.svg" alt="" width="100%">
-            </div>
-            <div class="halfBlock">
-                <h2>Hour of Code</h2>
-                <p>Code.org decided to organize "Hour of Code" where all do programming for an hour. ACM VVCE MYSURU decided to join and went to local schools to promote computing and programming by conducting this "Hour of Code".</p>
-            </div>
+          <div class="halfBlock">
+            <img src="./Assets/hocb.svg" alt="" width="100%" />
+          </div>
+          <div class="halfBlock">
+            <h2>Hour of Code</h2>
+            <p>
+              Code.org decided to organize "Hour of Code" where all do
+              programming for an hour. ACM VVCE MYSURU decided to join and went
+              to local schools to promote computing and programming by
+              conducting this "Hour of Code".
+            </p>
+          </div>
         </div>
         <div class="row mReverse">
-            <div class="halfBlock">
-                <h2>Industrial Visit</h2>
-                <p>A visit to ISRO Master Control Facility (MCF) on October 1, 2018.</p>
-            </div>
-            <div class="halfBlock alt">
-                <img src="./Assets/ivisit.svg" alt="" width="100%">
-            </div>
+          <div class="halfBlock">
+            <h2>Industrial Visit</h2>
+            <p>
+              A visit to ISRO Master Control Facility (MCF) on October 1, 2018.
+            </p>
+          </div>
+          <div class="halfBlock alt">
+            <img src="./Assets/ivisit.svg" alt="" width="100%" />
+          </div>
         </div>
         <div class="row alt">
-            <div class="halfBlock alt">
-                <img src="./Assets/aicdmb.png" alt="" height="75%" width="50%">
-            </div>
-            <div class="halfBlock">
-                <h2>AICDMB 2020 INTERNATIONAL CONFERENCE</h2>
-                <p>Annual International Conference on Data Science, Machine Learning and Blockchain Technology (AICDMB-2020)</p>
-            </div>
+          <div class="halfBlock alt">
+            <img src="./Assets/aicdmb.png" alt="" height="75%" width="50%" />
+          </div>
+          <div class="halfBlock">
+            <h2>AICDMB 2021 INTERNATIONAL CONFERENCE</h2>
+            <p>
+              Annual International Conference on Data Science, Machine Learning
+              and Blockchain Technology (AICDMB-2021)
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- -->
-<!--Meet the team-->
-<div class="body-block ">
-    <div class="container teamBlock">
-        <h1>Our Team 2020 - 21</h1><hr>
+
+    <div class="body-block">
+      <div class="container full-height">
+        <div class="secondary">
+          <h1>Member Projects and Works</h1>
+          <hr />
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-12 post">
+              <h6 class="postDate">Suraj G, Secretary</h6>
+              <div id="imageblock">
+                <img src="./Assets/sorter.jpg" alt="Sorter thumbnail" />
+              </div>
+              <h4>Sorter</h4>
+              <p>Visualize various sorting algorithm.</p>
+              <a
+                href="https://suraj-gov.github.io/sorter/"
+                id="postbtn"
+                class="button center"
+                >Visit</a
+              >
+            </div>
+            <!--                 <div class="col-md-4 col-sm-12 col-12 post">
+                    <h6 class="postDate">15th and 16th Feb, 2021</h6>
+                    <div id="imageblock">
+                        <img src="Assets/aicdmb21.jpg" alt="AICDMB 2021">
+                    </div>
+                    <h4>AICDMB 2021</h4>
+                    <p>Second Annual International Conference on Data Science, Machine Learning and Blockchain Technology held at Vidyavardhaka College of Engineering</p>
+                    <a href="https://aicdmb.com" id="postbtn" class="button center">Visit</a>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 post">
+                    <h6 class="postDate">31st Dec, 2020</h6>
+                    <div id="imageblock">
+                        <img src="Assets/ADSP_.jpg" alt="DSP Talk - Ashutosh Dutta">
+                    </div>
+                    <h4>ACM DSP: Dr. Ashutosh Dutta</h4>
+                    <p>Security in 5G Networks - Challenges and Opportunities</p>
+                    <a href="https://vvce.acm.org/dsp" id="postbtn" class="button center">Visit</a>
+                </div>    -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <!--Meet the team-->
+    <div class="body-block">
+      <div class="container teamBlock">
+        <h1>Our Team 2021 - 22</h1>
+        <hr />
         <div class="row mobTop">
-            <div id="topTeam">
-                <div class="col-sm-4 col-md-4 mt-60">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="./Assets/Crop/Gururaj.png" alt="team member" class="img-responsive">
-                        </div>
-                        
-                    </div>
-                    <div class="team-title">
-                        <h5>DR. Gururaj H L  <a href="https://in.linkedin.com/in/gururaj-h-l-92513539"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
-                        <span>Faculty Sponsor</span>
-                    </div>
+          <div id="topTeam">
+            <div class="col-sm-4 col-md-4 mt-60">
+              <div class="team-member">
+                <div class="team-img">
+                  <img
+                    src="./Assets/Crop/Gururaj.png"
+                    alt="team member"
+                    class="img-responsive"
+                  />
                 </div>
-                <div class="col-sm-4 col-md-4 mobdisplayfalse">
-                    <div class="team-member mt-60">
-                        <div class="team-img">
-                            <img src="./Assets/Crop/Neha.png" alt="team member" class="img-responsive">
-                        </div>
-                        
-                    </div>
-                    <div class="team-title">
-                        <h5>Neha R  <a href="https://www.linkedin.com/in/neha-r-8288b6173"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
-                        <span>Chair</span>
-                    </div>
-                </div>
-                
-                <div class="col-sm-4 col-md-4 mobdisplay">
-                    <div class="team-member mt-60">
-                        <div class="team-img">
-                            <img src="./Assets/Crop/Neha.png" alt="team member" class="img-responsive">
-                        </div>
-                        
-                    </div>
-                    <div class="team-title">
-                        <h5>Neha R  <a href="https://www.linkedin.com/in/neha-r-8288b6173"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
-                        <span>Chair</span>
-                    </div>
-                </div>
-                
-                <div class="col-sm-4 col-md-4">
-                    <div class="team-member mt-60">
-                        <div class="team-img">
-                            <img src="./Assets/Crop/Reena.png" alt="team member" class="img-responsive">
-                        </div>
-                        
-                    </div>
-                    <div class="team-title">
-                        <h5>Reena Reddy  <!--<a href="#"><i class="team-icon fab fa-linkedin-in"></i></a>--> </h5>
-                        <span>Vice-Chair</span>
-                    </div>
-                </div>
+              </div>
+              <div class="team-title">
+                <h5>
+                  DR. Gururaj H L
+                  <a href="https://in.linkedin.com/in/gururaj-h-l-92513539"
+                    ><i class="team-icon fab fa-linkedin-in"></i
+                  ></a>
+                </h5>
+                <span>Faculty Sponsor</span>
+              </div>
             </div>
+
+            
+            <div class="col-sm-4 col-md-4">
+                <div class="team-member mt-60">
+                  <div class="team-img">
+                    <img
+                      src="./Assets/Crop/2021/VKP.jpg"
+                      alt="team member"
+                      class="img-responsive"
+                    />
+                  </div>
+                </div>
+                <div class="team-title">
+                  <h5>
+                    Prof. Vidyashree K P
+                    <!-- <a href="https://www.linkedin.com/in/nydile-gowda-0b37a7204"><i class="team-icon fab fa-linkedin-in"></i></a> -->
+                  </h5>
+                  <span>Web Sponsor</span>
+                </div>
+              </div>
+
+            <div class="col-sm-4 col-md-4 mobdisplayfalse">
+              <div class="team-member mt-60">
+                <div class="team-img">
+                  <img
+                    src="./Assets/Crop/2021/saathvik.jpg"
+                    alt="team member"
+                    class="img-responsive"
+                  />
+                </div>
+              </div>
+              <div class="team-title">
+                <h5>
+                  Saathvik D M
+                  <a href="https://www.linkedin.com/in/saathvikdm/"
+                    ><i class="team-icon fab fa-linkedin-in"></i
+                  ></a>
+                </h5>
+                <span>Chair</span>
+              </div>
+            </div>
+
+
+            <div class="col-sm-4 col-md-4 mobdisplay">
+              <div class="team-member mt-60">
+                <div class="team-img">
+                  <img
+                    
+                    src="./Assets/Crop/2021/saathvik.jpg"
+                    alt="team member"
+                    class="img-responsive"
+                    style="height: 340px;"
+                  />
+                </div>
+              </div>
+              <div class="team-title">
+                <h5>
+                  Saathvik D M
+                  <a href="https://www.linkedin.com/in/saathvikdm/"
+                    ><i class="team-icon fab fa-linkedin-in"></i
+                  ></a>
+                </h5>
+                <span>Chair</span>
+              </div>
+            </div>
+
+            
+          </div>
         </div>
+
         <div class="row mt-60">
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 col-6">
+                  <div class="team-member">
+                    <div class="team-img">
+                        <img
+                          src="./Assets/Crop/2021/nydile.jpg"
+                          alt="team member"
+                          class="img-responsive"
+                        />
+                      </div>
+                    </div>
+                    <div class="team-title">
+                      <h5>
+                        Nydile
+                        <a href="https://www.linkedin.com/in/nydile-gowda-0b37a7204"><i class="team-icon fab fa-linkedin-in"></i></a>
+                      </h5>
+                      <span>Vice-Chair</span>
+                    </div>
+              </div>
+              <div class="col-sm-3 col-md-3 col-6">
+                  <div class="team-member">
+                      <div class="team-img">
+                          <img
+                          src="Assets/Crop/2021/maan.jpg"
+                          alt="team member"
+                          class="img-responsive"
+                        /></div>
+                      
+                  </div>
+                  <div class="team-title">
+                      <h5>Maanyatha M <a href="https://www.linkedin.com/in/maanyatha-mahesh-255094216"
+                        ><i class="team-icon fab fa-linkedin-in"></i
+                      ></a>
+                    </h5>
+                      <span>Secretary</span>
+                  </div>
+              </div>  
+              <div class="col-sm-3 col-md-3 col-6">
                 <div class="team-member">
                     <div class="team-img">
-                        <img src="Assets/Crop/SurajG.png" alt="team member" class="img-responsive">
-                    </div>
+                        <img
+                    src="Assets/Crop/2021/madhurya.jpg"
+                    alt="team member"
+                    class="img-responsive"
+                  /></div>
                     
                 </div>
                 <div class="team-title">
-                    <h5>Suraj G  <a href="https://www.linkedin.com/in/suraj-g-5863b0113/"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
-                    <span>Secretary</span>
+                    <h5>Madhurya <a href="https://www.linkedin.com/in/madhuryamj/"
+                        ><i class="team-icon fab fa-linkedin-in"></i
+                      ></a>
+                      </h5>
+                      <span>Treasurer</span>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="Assets/Crop/Pramod.png" alt="team member" class="img-responsive">
-                    </div>
-                    
-                </div>
-                <div class="team-title">
-                    <h5>Sathya Pramod  <!--<a href="#"><i class="team-icon fab fa-linkedin-in"></i></a>--></h5>
-                    <span>Treasurer</span>
-                </div>
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="Assets/Crop/Nithin.png" alt="team member" class="img-responsive">
-                    </div>
-                    
-                </div>
-                <div class="team-title">
-                    <h5>Nithin B O  <a href="https://www.linkedin.com/in/nithin-b-o-1b601816b/"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
-                    <span>Web Master</span>
-                </div>
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="Assets/Crop/Saathvik.png" alt="team member" class="img-responsive">
-                    </div>
-                    
-                </div>
-                <div class="team-title">
-                    <h5>Saathvik D M  <a href="https://www.linkedin.com/in/saathvikdm/"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
-                    <span>Web Master</span>
-                </div>
+            <div class="col-sm-3 col-md-3 col-6">
+              <div class="team-member">
+                <div class="team-img">
+                    <img
+                    src="Assets/Crop/2021/suhas.jpg"
+                    alt="team member"
+                    class="img-responsive"
+                  /></div>
+                      
+                  </div>
+                  <div class="team-title">
+                      <h5>Suhas G  <a href="https://www.linkedin.com/in/suhas-g-4a5662219"><i class="team-icon fab fa-linkedin-in"></i></a>
+                      </h5>
+                      <span>Web Master</span>
+                  </div>
+              </div>
             </div>
         </div>
-        <div class="row">
-            <div class="aCenter">
-                <div class="col-sm-4 col-md-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="Assets/Crop/Vishal.png" alt="team member" class="img-responsive">
-                        </div>
-                        
-                    </div>
-                    <div class="team-title">
-                        <h5>Vishal B  <a href="https://www.linkedin.com/in/vishal-b-8158871a1/"><i class="team-icon fab fa-linkedin-in"></i></a></h5>
-                        <span>Event Co-Ordinator</span>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="Assets/Crop/Sharmila.png" alt="team member" class="img-responsive">
-                        </div>
-                        
-                    </div>
-                    <div class="team-title">
-                        <h5>Sharmila  <!--<a href="#"><i class="team-icon fab fa-linkedin-in"></i></a>--></h5>
-                        <span>Event Co-Ordinator</span>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="Assets/Crop/Sri.png" alt="team member" class="img-responsive">
-                        </div>
-                        
-                    </div>
-                    <div class="team-title">
-                        <h5>Shrivatsa G  <!--<a href="#"><i class="team-icon fab fa-linkedin-in"></i></a>--></h5>
-                        <span>Event Co-Ordinator</span>
-                    </div>
-                </div>
-            </div> 
-        </div>
+      </div>
     </div>
-</div>
-<!---->
+    <!---->
 
-<!-- Chapter Achievements -->
-<div class="body-block" id="achievementBlock">
-    <div class="container">
-        <h1>Achievements of The Chapter Members</h1><hr><br>
+    <!-- Chapter Achievements -->
+    <div class="body-block" id="achievementBlock">
+      <div class="container">
+        <h1>Achievements of The Chapter Members</h1>
+        <hr />
+        <br />
         <ul>
-            <li>Ashwin A Kumar has been selected for Google Summer of Code (GSoC-2020)</li>
-            <li>Manoj Athreya A was selected for ACM Winter School on Hybrid Cloud at IISC Bangalore (9 - 14 Jan 2020)</li>
-            <li>Gaurav Purswani was selected for ACM Winter School 2019 on Cyber security at NISER Bhubaneswar (10 - 16 Dec 2019)</li>
-            <li>Parikshith H was selected for ACM Summer School 2019 on Cyber security and Data Analytics at IIIT Delhi (8 - 19 Jul 2019)</li>
+          <li>
+            Ashwin A Kumar has been selected for Google Summer of Code
+            (GSoC-2020)
+          </li>
+          <li>
+            Manoj Athreya A was selected for ACM Winter School on Hybrid Cloud
+            at IISC Bangalore (9 - 14 Jan 2020)
+          </li>
+          <li>
+            Gaurav Purswani was selected for ACM Winter School 2019 on Cyber
+            security at NISER Bhubaneswar (10 - 16 Dec 2019)
+          </li>
+          <li>
+            Parikshith H was selected for ACM Summer School 2019 on Cyber
+            security and Data Analytics at IIIT Delhi (8 - 19 Jul 2019)
+          </li>
         </ul>
+      </div>
     </div>
-</div>
-<!-- Chapter Achievements -->
+    <!-- Chapter Achievements -->
 
-<!-- Contact Us Section -->
-<div class="body-block" id="contactBlock">
-    <div class="container full-height">
-        <h1 id="contactSection">Contact Us</h1><hr><br>
+    <!-- Contact Us Section -->
+    <div class="body-block" id="contactBlock">
+      <div class="container full-height">
+        <h1 id="contactSection">Contact Us</h1>
+        <hr />
+        <br />
         <div class="row">
-            <div class="col-md-8"><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5592.348206580939!2d76.6179629382734!3d12.336362616186097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7a5fd7f84b71%3A0x56edd06e7a72a40!2sVidyavardhaka%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1585450335348!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-            <div class="col-md-4">
-                <h2>Vidyavardhaka College of Engineering</h2>
-                <address><strong>P.B. No.206</strong><br>
-                    Kannada Sahithya Parishath Rd, <br>
-                    III Stage,<br>
-                    Gokulam,<br>
-                    Mysuru,<br>
-                    Karnataka 570002<br>
-                    <abbr title="Phone">P:</abbr> 0821 427 6200
-                </address>
-                <a href="mailto:acm@vvce.ac.in" target="_blank" class="button">Email Us!</a>
+          <div class="col-md-8">
+            <iframe
+              id="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5592.348206580939!2d76.6179629382734!3d12.336362616186097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7a5fd7f84b71%3A0x56edd06e7a72a40!2sVidyavardhaka%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1585450335348!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="col-md-4">
+            <h2>Vidyavardhaka College of Engineering</h2>
+            <address>
+              <strong>P.B. No.206</strong><br />
+              Kannada Sahithya Parishath Rd, <br />
+              III Stage,<br />
+              Gokulam,<br />
+              Mysuru,<br />
+              Karnataka 570002<br />
+              <abbr title="Phone">P:</abbr> 0821 427 6200
+            </address>
+            <a href="mailto:acm@vvce.ac.in" target="_blank" class="button"
+              >Email Us!</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Us Section End -->
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="footer-tile">
+              <img
+                class="footer-logo center"
+                src="./Assets/vvce-logo.png"
+                alt="vvce_logo"
+              />
             </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="footer-tile center">
+              <p style="text-align: center; padding-top: 10px; content: ''"></p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="social d-flex justify-content-center">
+              <a
+                class="mx-2"
+                href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"
+                ><i class="icon fab fa-linkedin-in"></i
+              ></a>
+              <a class="mx-2" href="https://www.facebook.com/vvceacm"
+                ><i class="icon fab fa-facebook"></i
+              ></a>
+              <a class="mx-2" href="https://www.instagram.com/vvce_acm/"
+                ><i class="icon fab fa-instagram"></i
+              ></a>
+              <a class="mx-2" href="mailto:acm@vvce.ac.in"
+                ><i class="icon far fa-envelope"></i
+              ></a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-<!-- Contact Us Section End -->
-<!-- Footer Section -->
-<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-12 col-12">
-				<div class="footer-tile">
-					<img class="footer-logo center" src="Assets/vvce-logo.png" alt="vvce_logo">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-12">
-				<div class="footer-tile center">
-					<p style="text-align: center; padding-top: 10px; content: '';"></p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-12">
-				<div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"><i class="icon fab fa-linkedin-in"></i></a>
-                    <a class="mx-2" href="https://www.facebook.com/vvceacm"><i class="icon fab fa-facebook"></i></a>
-                    <a class="mx-2" href="https://www.instagram.com/vvce_acm/"><i class="icon fab fa-instagram"></i></a>
-                    <a class="mx-2" href="mailto:acm@vvce.ac.in"><i class="icon far fa-envelope"></i></a>
-                </div>
-			</div>
+      </div>
+      <div class="endblock">
+        <div class="container">
+          <p style="text-align: left">©VVCE ACM Student Chapter, Mysuru</p>
         </div>
+      </div>
     </div>
-    <div class="endblock"><div class="container"><p style="text-align: left;">©VVCE ACM Student Chapter, Mysuru</p></div></div>
-</div>
-<!-- -->
+    <!-- -->
 
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
 
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%"; 
-}
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("topBtn");
 
-<script>
-//Get the button
-var mybutton = document.getElementById("topBtn");
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src=".//fetchScript.js"></script>
-
-
-</body>
-</html>	
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src=".//fetchScript.js"></script>
+  </body>
+</html>
