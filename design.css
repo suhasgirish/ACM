@@ -585,6 +585,13 @@ hr {
 #postbtn{
   font-size: 15px;
   padding: 5px;
+  
+}
+.postbtn {
+  border: 1px solid red;
+  color: red;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 .postDate{
@@ -796,3 +803,9 @@ hr {
 }
 
 
+.eventClosed {
+    border: 1px solid red;
+    color: red;
+    opacity: 0.8;
+    text-decoration: none;
+}
