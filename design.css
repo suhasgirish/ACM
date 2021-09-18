@@ -809,3 +809,19 @@ hr {
     opacity: 0.8;
     text-decoration: none;
 }
+
+.eventclosedindex{
+background-color: #121212;
+border: 1px solid #d11919;
+box-shadow: rgba(0, 0, 0, 1);
+color: #d11919;
+padding: font-size: 15px;
+padding: 5px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+margin: 4px 2px;
+cursor: pointer;
+font-family: 'Quattrocento Sans', sans-serif;
+}
