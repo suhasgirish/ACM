@@ -1,145 +1,249 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-	<title>Collaboration with UHD | ACM VVCE</title>
-	<link rel="stylesheet" type="text/css" href="design.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Collaboration with UHD | ACM VVCE</title>
+    <link rel="stylesheet" type="text/css" href="design.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-</head>
-<body>
-<button onclick="topFunction()" id="topBtn" title="Go to top"> <i class="fas fa-chevron-up"> </i></button>
-<!-- Navbar Section -->
-<div id="navbar">
-    <ul class="topnav sticky" id="myTopnav">
-        <span class = "opnbtn" style="font-size:30px;cursor:pointer;float: right;" onclick="openNav()">&#9776;</span>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-chevron-up"> </i>
+    </button>
+    <!-- Navbar Section -->
+    <div id="navbar">
+      <ul class="topnav sticky" id="myTopnav">
+        <span
+          class="opnbtn"
+          style="font-size: 30px; cursor: pointer; float: right"
+          onclick="openNav()"
+          >&#9776;</span
+        >
         <div class="logo-div">
-            <a href="/index.html"><li class="logo"><img id="logo" src="Assets/logo_acm.svg" alt="ACM" height="100px" width="100px"></li></a>
+          <a href="/index.html"
+            ><li class="logo">
+              <img
+                id="logo"
+                src="Assets/logo_acm.svg"
+                alt="ACM"
+                height="100px"
+                width="100px"
+              /></li
+          ></a>
         </div>
-        <li class="right"><a class="contactrt" href="/index.html#contactSection">Contact US!</a></li>    
+        <li class="right">
+          <a class="contactrt" href="/index.html#contactSection">Register!</a>
+        </li>
         <li class="right"><a href="/bylaws.html">Chapter By-Laws</a></li>
         <li class="right"><a href="/events.html">Events</a></li>
         <li class="right"><a href="/team.html">Team</a></li>
         <li class="right"><a href="/index.html">Home</a></li>
-    </ul>
-</div>
+      </ul>
+    </div>
 
-
-<div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" style="font-size:30px;cursor:pointer;float: right; padding:0;" onclick="closeNav()">&#9776;</a>
-    <div class="overlay-content">
+    <div id="myNav" class="overlay">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        style="font-size: 30px; cursor: pointer; float: right; padding: 0"
+        onclick="closeNav()"
+        >&#9776;</a
+      >
+      <div class="overlay-content">
         <a href="/index.html">Home</a>
         <a href="/team.html">Team</a>
         <a href="/events.html">Events</a>
-        <a href="/bylaws.html">Chapter By-Laws</a><br><br>
-        <a class="contact" href="/index.html#contactSection">Contact US!</a>
+        <a href="/bylaws.html">Chapter By-Laws</a><br /><br />
+        <a class="contact" href="/index.html#contactSection">Register!</a>
         <div class="social d-flex justify-content-center">
-            <a class="overlayIcon" href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"><i class="overlaySocial fab fa-linkedin-in"></i></a>
-            <a class="overlayIcon" href="https://www.facebook.com/vvceacm"><i class="overlaySocial fab fa-facebook"></i></a>
-            <a class="overlayIcon" href="https://www.instagram.com/vvce_acm/"><i class="overlaySocial fab fa-instagram"></i></a>
-            <a class="overlayIcon" href="mailto:acm@vvce.ac.in"><i class="overlaySocial far fa-envelope"></i></a>
+          <a
+            class="overlayIcon"
+            href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"
+            ><i class="overlaySocial fab fa-linkedin-in"></i
+          ></a>
+          <a class="overlayIcon" href="https://www.facebook.com/vvceacm"
+            ><i class="overlaySocial fab fa-facebook"></i
+          ></a>
+          <a class="overlayIcon" href="https://www.instagram.com/vvce_acm/"
+            ><i class="overlaySocial fab fa-instagram"></i
+          ></a>
+          <a class="overlayIcon" href="mailto:acm@vvce.ac.in"
+            ><i class="overlaySocial far fa-envelope"></i
+          ></a>
         </div>
+      </div>
     </div>
-</div>
 
+    <!-- -->
 
-<!-- -->
+    <div class="body-block top-block">
+      <div class="container">
+        <h1>Collaboration with University of Houston, Downtown</h1>
+        <hr />
+        <p>
+          Very happy and proud to inform that Prof. Lin, University of Houston,
+          USA agreed to collaborate with our Institution. Looking forward for
+          the great eductional journey.
+        </p>
+        <img
+          src="/Assets/uhd.jpg"
+          alt="UHD_Letter"
+          id="page-center"
+          height="75%"
+          width="50%"
+          style="margin: 2% 23%"
+        />
+        <a
+          href="https://vvce.acm.org/"
+          id="postbtn"
+          id="page-center"
+          class="button center"
+          style="margin: 2% 23%"
+          >Back to Home</a
+        >
+      </div>
+    </div>
 
-<div class="body-block top-block">
-  <div class="container">
-      <h1>Collaboration with University of Houston, Downtown</h1><hr>
-      <p>Very happy and proud to inform that Prof. Lin, University of Houston, USA agreed to collaborate with our Institution.
-        Looking forward for the great eductional journey.</p>
-      <img src="/Assets/uhd.jpg" alt="UHD_Letter" id="page-center" height="75%" width="50%" style="margin: 2% 23%;">
-      <a href="https://vvce.acm.org/" id="postbtn" id="page-center" class="button center" style="margin: 2% 23%;">Back to Home</a>
-  </div>
-</div>
-
-<!-- Footer Section -->
-<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-12 col-12">
-				<div class="footer-tile">
-					<img class="footer-logo center" src="Assets/vvce-logo.png" alt="vvce_logo">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-12">
-				<div class="footer-tile center">
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12 col-12">
-				<div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"><i class="icon fab fa-linkedin-in"></i></a>
-                    <a class="mx-2" href="https://www.facebook.com/vvceacm"><i class="icon fab fa-facebook"></i></a>
-                    <a class="mx-2" href="https://www.instagram.com/vvce_acm/"><i class="icon fab fa-instagram"></i></a>
-                    <a class="mx-2" href="mailto:acm@vvce.ac.in"><i class="icon far fa-envelope"></i></a>
-                </div>
-			</div>
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="footer-tile">
+              <img
+                class="footer-logo center"
+                src="Assets/vvce-logo.png"
+                alt="vvce_logo"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="footer-tile center"></div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="social d-flex justify-content-center">
+              <a
+                class="mx-2"
+                href="https://www.linkedin.com/in/acm-student-chapter-vvce-411a831b1/"
+                ><i class="icon fab fa-linkedin-in"></i
+              ></a>
+              <a class="mx-2" href="https://www.facebook.com/vvceacm"
+                ><i class="icon fab fa-facebook"></i
+              ></a>
+              <a class="mx-2" href="https://www.instagram.com/vvce_acm/"
+                ><i class="icon fab fa-instagram"></i
+              ></a>
+              <a class="mx-2" href="mailto:acm@vvce.ac.in"
+                ><i class="icon far fa-envelope"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="endblock">
+        <div class="container">
+          <p style="text-align: left">©VVCE ACM Student Chapter, Mysuru</p>
+        </div>
+      </div>
     </div>
-    <div class="endblock"><div class="container"><p style="text-align: left;">©VVCE ACM Student Chapter, Mysuru</p></div></div>
-</div>
-<!-- -->
+    <!-- -->
 
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
 
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
 
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%"; 
-}
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("topBtn");
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-<script>
-//Get the button
-var mybutton = document.getElementById("topBtn");
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src=".//fetchScript.js"></script>
-
-
-</body>
-</html>	
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src=".//fetchScript.js"></script>
+  </body>
+</html>
